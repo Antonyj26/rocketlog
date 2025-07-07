@@ -6,9 +6,6 @@ import { route } from "./routes";
 const app = express();
 
 app.use(express.json());
-
-app.use(errorHandling);
-
 app.use(route);
-
+app.use(errorHandling);
 export { app };
