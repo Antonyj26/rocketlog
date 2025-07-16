@@ -1,3 +1,4 @@
+import { number } from "zod";
 import { app } from "./app";
 
 const PORT = 3333;
