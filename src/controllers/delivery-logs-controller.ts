@@ -60,6 +60,10 @@ class DeliveryLogsController {
     ) {
       throw new AppError("the user can only viem their deliveries", 401);
     }
+
+    if (!delivery) {
+      return response.status(404).json({ message: "delivery not found" });
+    }
     return response.json(delivery);
   }
 }
